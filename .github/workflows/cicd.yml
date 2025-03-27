@@ -31,4 +31,4 @@ jobs:
       - name: Pull image from docker hub
         run: sudo docker pull casseli/nodebacktprod:latest
       - name: Run docker container
-        run: sudo docker run -d -p 4000:4000 --name node-server -v "$(pwd)/.env:/.env" --network mi_red casseli/nodebacktprod:latest
+        run: sudo docker run -d -p 4000:4000 --name node-server -v "$(pwd)/.env:/app/.env" --network mi_red casseli/nodebacktprod:latest
