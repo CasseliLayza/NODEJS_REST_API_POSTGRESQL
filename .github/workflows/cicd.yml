@@ -15,10 +15,6 @@ jobs:
         with:
           distribution: 'alpine'
           node-version: '22.14'
-      - name: Build Project
-        run: npm ci
-      - name: 🏗️ Build Project
-        run: npm run build  
       - name: login to docker hub
         run: echo ${{secrets.DOCKER_HUB_ACCESS_TOKEN}} | docker login -u ${{secrets.DOCKER_HUB}} --password-stdin
       - name: Build docker image
