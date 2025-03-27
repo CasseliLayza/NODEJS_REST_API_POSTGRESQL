@@ -1,1 +1,0 @@
-## Nodejs PostgreSQL restAPI
