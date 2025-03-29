@@ -100,23 +100,23 @@ npm run dev
 
 ```bash
 # Crear usuario
-curl -X POST http://localhost:3000/users \
+curl -X POST http://localhost:4000/users \
   -H "Content-Type: application/json" \
   -d '{"name":"Ana","email":"ana@email.com"}'
 
 # Obtener todos los usuarios
-curl http://localhost:3000/users
+curl http://localhost:4000/users
 
 # Buscar por ID
-curl http://localhost:3000/users/1
+curl http://localhost:4000/users/1
 
 # Actualizar usuario
-curl -X PUT http://localhost:3000/users/1 \
+curl -X PUT http://localhost:4000/users/1 \
   -H "Content-Type: application/json" \
   -d '{"name":"Ana Actualizada", "email":"ana@nuevo.com"}'
 
 # Eliminar usuario
-curl -X DELETE http://localhost:3000/users/1
+curl -X DELETE http://localhost:4000/users/1
 ```
 
 ---
